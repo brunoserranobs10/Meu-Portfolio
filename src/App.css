@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Verdana, sans-serif;
+  background-color: #0f172a; /* Azul escuro bem profundo e moderno */
+  color: #f8fafc;
+  line-height: 1.6;
+}
+
+.site {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: linear-gradient(135deg, #1e293b, #111827); /* Gradiente sutil no fundo */
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(59, 130, 246, 0.2); /* Borda iluminada sutil */
+}
+
+.foto {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #3b82f6; /* Azul bem vivo */
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); /* Efeito neon suave na foto */
+}
+
+.header h1 {
+  margin: 0 0 10px 0;
+  color: #60a5fa; /* Azul claro vibrante */
+  font-size: 2.2rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.secao {
+  margin-top: 30px;
+  padding: 25px;
+  background-color: #1e293b;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.secao h2 {
+  margin-top: 0;
+  color: #60a5fa;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 8px;
+  font-size: 1.4rem;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.habilidade {
+  margin-bottom: 8px;
+}
+
+button {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8); /* Gradiente vivo no botão */
+  border: none;
+  padding: 10px 18px;
+  margin-right: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #60a5fa, #2563eb);
+  transform: translateY(-3px); /* Levitação maior */
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.5);
+}
+
+.abas {
+  margin-bottom: 20px;
+}
+
+.abas button {
+  background-color: #334155;
+  color: #cbd5e1;
+  box-shadow: none;
+}
+
+.abas button.ativa {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.projeto {
+  background-color: #0f172a;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #3b82f6; /* Destaque lateral marcante */
+  transition: transform 0.2s ease;
+}
+
+.projeto:hover {
+  transform: translateX(4px); /* Efeito de leve deslocamento ao passar o mouse */
+}
+
+.projeto h3 {
+  margin-top: 0;
+  color: #f8fafc;
+}
+
+.detalhes {
+  margin-bottom: 0;
+  color: #94a3b8;
+}
+
+.rodape {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
